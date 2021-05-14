@@ -6,4 +6,4 @@ before_install:
  - docker build -t 2ujiten/react-app -f Dockerfile.dev .
 
 script:
- - docker run -e CI=true 2ujiten/react-app npm run test -- -- coverage 
+ - docker run -e CI=true 2ujiten/react-app npm run test
